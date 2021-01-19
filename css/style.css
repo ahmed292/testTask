@@ -1,0 +1,198 @@
+.minDiv {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.minDiv .searching {
+    width: 100%;
+    border: 1px solid #E2E6EC;
+    height: 85px;
+    padding: 0 31px;
+    display: flex;
+    /*    justify-content: space-between;*/
+    align-items: center;
+    margin-bottom: 29px;
+    box-shadow: 1px 4px 5px 0px rgba(226, 230, 236, 0.75);
+    -webkit-box-shadow: 1px 4px 5px 0px rgba(226, 230, 236, 0.75);
+    -moz-box-shadow: 1px 4px 5px 0px rgba(226, 230, 236, 0.75);
+}
+
+.minDiv .searching > input {
+    border: unset;
+    height: 100%;
+    width: 90%;
+    width: calc(100% - 27px);
+}
+
+.minDiv .searching > input:focus {
+    outline: none
+}
+
+.minDiv nav {
+    height: 525px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.minDiv nav ul {
+    list-style: none;
+    padding: 27px 23px;
+    background-color: #FEFCF6;
+    border-top: 2px solid #FED428;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    grid-gap: 13px;
+    height: 100%;
+}
+
+.minDiv nav ul li {
+    border: 1px solid transparent
+}
+
+.minDiv nav ul li:hover {
+    border: 1px solid #FED428
+}
+
+.minDiv nav ul li h4 {
+    font-size: 12px;
+    background: #F5F5F5;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.minDiv nav ul li div {
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    -webkit-box-shadow: -1px -1px 12px -6px rgb(0 0 0 / 25%);
+
+}
+
+.sear {
+    width: 70%;
+    padding-left: 18px;
+}
+
+.endIm {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.yesMs {
+    width: 100%
+}
+
+.model {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.model > div {
+    display: inline-flex;
+}
+
+.model > div > p {
+    width: 90px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C1C8DB;
+    border-radius: 50px;
+    border: 2px solid #707070;
+    /*    border: 3px solid #FAD027;*/
+    margin-right: 20px;
+    font-size: 16px;
+    color: #272727;
+    margin-bottom: 40px;
+}
+
+.model > div > p:hover {
+    border: 2px solid #FAD027;
+}
+
+.minDiv nav::-webkit-scrollbar,
+.minDiv .model::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+    height: 5px
+}
+
+.minDiv .model::-webkit-scrollbar-track,
+.minDiv nav::-webkit-scrollbar-track {
+    background: #EAEAEA;
+    border-radius: 5px;
+}
+
+.minDiv .model::-webkit-scrollbar-thumb,
+.minDiv nav::-webkit-scrollbar-thumb {
+    background: #727E88;
+    border-radius: 5px;
+}
+
+.searching .remove {
+        min-width: 155px;
+    height: 42px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    background: #FED428;
+    padding-left: 18px;
+    font-size: 18px;
+    justify-content: space-between;
+    position: relative
+}
+
+.searching .remove .remove2 {
+    position: absolute;
+    left: 115%;
+     min-width: unset;
+}
+
+.searching .remove b {
+    margin-right: 10px;
+}
+
+.searching .remove span {
+    background: #F5F5F5;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.complated {
+    display: flex;
+    align-items: center;
+}
+
+.complated div:first-of-type {
+    margin-right: 22px;
+}
+
+.complated div h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3D434A;
+}
+
+.complated div p {
+    font-size: 14px;
+    color: #707070;
+}

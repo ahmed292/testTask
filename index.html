@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section>
+
+        <div class="container">
+            <div class="minDiv">
+
+                <div class="searching">
+                    <input type="text" class="text-input" id="filter" value="" placeholder="Search for Your Vehicle" />
+                    <span class="sear" style="display: none">Select Vehicle Model</span>
+                    <span class="endIm"><img src="./img/Group 766.png" alt=""></span>
+                </div>
+                <div class="model" style="display: none">
+                    <div>
+                        <p>s1</p>
+                        <p>s2</p>
+                        <p>s3</p>
+                        <p>s4</p>
+                        <p>s5</p>
+                        <p>s6</p>
+                        <p>s7</p>
+                        <p>s8</p>
+                        <p>s9</p>
+                        <p>s10</p>
+                        <p>s11</p>
+                    </div>
+                </div>
+                <div style="display: none" class="yesMs">
+                    <div class="complated">
+                        <div>
+                            <img src="./img/Group%20799.png" alt="">
+                        </div>
+                        <div>
+                            <h2>We Have It!</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <h4>BWM</h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>AUDI</h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>Lamborghini </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>Ferrari </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>Mercedes </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Porsche </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Alfa Romeo </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>Lamborghini </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Bentley </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>Mclaren </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Rolls Royce </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Maserati </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Volkswagen </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Aston Martin </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>opel </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>fiat </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>jaguar </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>honda </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>toyota </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Infiniti </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4>nissan </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                        <li>
+                            <h4> Mitsubishi </h4>
+                            <div><img src="./img/Image 7.png" alt=""></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- original source: http://jsfiddle.net/umaar/t82gZ/ -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>-->
+
+    <script>
+
+        // $('#filter')
+        $(document).ready(function() {
+            $("nav ul li").click(function() {
+                let filter = $('#filter');
+                let as = $(this).text();
+
+                var ahmed = filter.val(as.trim())
+
+                $('.searching').prepend("<b class='remove'>" + ahmed.val() + "<span> x </span>" + " </b>")
+
+                ahmed.hide()
+                $('.sear').show()
+
+                $('.model').fadeIn().click(function() {
+                    $(this).find('p').click(function() {
+                        let val2 = $(this).text();
+                        let val1 = $('#filter').val();
+                        $('.sear').hide()
+//                        $('.searching').prepend("<b class='remove'>" + val2 + "<span> x </span>" + " </b>")
+                        $("<b class='remove remove2'>" + val2 + "<span> x </span>" + " </b>").appendTo('.searching b')
+                        //                        console.log(val1.val()) 
+                        $('#filter').val(' ');
+                        $('.yesMs').fadeIn();
+                        $('.model').hide()
+                    })
+                });
+                $('nav').hide()
+            })
+            $("#filter").keyup(function() {
+
+                // Retrieve the input field text and reset the count to zero
+                var filter = $(this).val().toUpperCase(),
+                    count = 0;
+
+                // Loop through the comment list               
+                $("nav ul li").each(function() {
+
+
+                    // If the list item does not contain the text phrase fade it out
+                    if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                        $(this).fadeOut();
+
+
+                        // Show the list item if the phrase matches and increase the count by 1
+                    } else {
+                        $(this).show();
+                        count++;
+                        //                        console.log($(this).show().text())
+                    }
+                });
+
+            });
+
+
+            $('.searching').delegate('.remove2','click',function() {
+                
+            });
+        });
+        
+        
+        $(window).on('load', function() {
+            $('.searching').delegate('.remove','click',function() {
+                $(".model").hide();
+                $(".complated").hide();
+                $('nav').show();
+                $(this).remove().$('.model').fadeIn()
+                
+                $(this).children().addClass('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+            });
+});
+    </script>
+</body></html>
